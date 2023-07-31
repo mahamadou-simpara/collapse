@@ -37,7 +37,7 @@ div,span{
 
 section div{
  box-shadow: 0px 0px 4px 1px;
- padding: 0.2rem 1rem;
+ padding: 0.2rem 1.5rem;
  width: 50%;
  border-radius: 5px;
  position: relative;
@@ -82,7 +82,7 @@ section div{
 
 .active .fa-solid.fa-xmark{
     display: inline;
- background-color: black;
+ background-color: rgb(95, 95, 95);
  color: white;
  padding: 3px;
  border-radius: 50%;
@@ -92,4 +92,5 @@ section div{
 
 .active .fa-solid.fa-circle-chevron-down{
  display: none;
+ background-color: rgb(95, 95, 95);
 }
