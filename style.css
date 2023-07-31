@@ -1,0 +1,95 @@
+*{
+ box-sizing: border-box;
+}
+
+body{
+margin: 0;
+}
+
+section{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+transition: 04s;
+}
+div p{
+ display: none;
+ transition: 04s;
+}
+
+.fa-regular.fa-comment{
+ display: none;
+   }
+   
+
+.fa-solid.fa-xmark{
+ display: none;
+}
+
+div,span{
+    position: absolute;
+    right: 10px;
+    top: 30%;
+    cursor: pointer;
+   }
+
+
+section div{
+ box-shadow: 0px 0px 4px 1px;
+ padding: 0.2rem 1rem;
+ width: 50%;
+ border-radius: 5px;
+ position: relative;
+ overflow: hidden;
+ margin: 10px 0;
+ transition: 04s;
+} 
+
+.active p{
+    display: block;
+}
+
+
+
+
+.active span{
+ position: absolute;
+ right: 10px;
+ top: 30%;
+}
+
+
+.active .fa-regular.fa-comment{
+ display: flex;
+ font-size: 3rem;
+ font-weight: 100;
+ position: absolute;
+ top: 30%;
+ z-index: -1;
+ color: rgb(176, 246, 176);
+ transition: 04s;
+}
+
+
+.active  #rotated{
+    color: rgb(11, 136, 246);
+    top: 10%;
+    transform: rotate(-100deg);
+    left: -10px;
+    transition: 04s;
+} 
+
+.active .fa-solid.fa-xmark{
+    display: inline;
+ background-color: black;
+ color: white;
+ padding: 3px;
+ border-radius: 50%;
+ font-size: 11px;
+ transition: 04s;
+} 
+
+.active .fa-solid.fa-circle-chevron-down{
+ display: none;
+}
